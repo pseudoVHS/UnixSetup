@@ -1,0 +1,59 @@
+
+#==============================================================================
+#                               Noktoesque
+# Date    : 05/14/2019
+# Author  : pseudoVHS
+# Version : 1.06
+# License : Common Development and Distribution License version 1.0
+#
+#==============================================================================
+
+own_window yes 
+own_window_class Conky
+own_window_colour 29353B
+own_window_transparent no
+own_window_argb_visual no
+own_window_argb_value 255
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_type dock
+double_buffer yes
+out_to_x no
+out_to_console yes
+use_spacer right
+use_xft yes
+#font snap-7
+xftfont Hyperspace:bold:size=7
+# xftfont Sans Bold:size=9
+xftalpha 1
+text_buffer_size 2048 
+# alignment is disabled when own_window_type is dock
+#alignment middle_middle
+gap_x 159
+gap_y 5
+default_bar_size 20 6
+short_units yes
+# --- Colours, Sizes, Fonts & Margins --- #
+update_interval 1.0
+stippled_borders 0
+minimum_size 0 0
+maximum_width 1920  # and here
+border_width 1
+default_color DBDBDB
+# --- Text --- #
+draw_outline no
+draw_borders no
+#font -*-profont-*-*-*-11-*-*-*-*-*-*-* 
+uppercase no
+draw_shades no 
+
+color 000000 # Light green
+color2 fd971f # Light Orange
+color1 ffffff # White
+color4 9e6ffe # Purple
+color5 00CBEE # Blue
+color6 6EC6D4 # Light grey
+color7 3399FF # Dark blue
+
+alignment top_middle
+TEXT
+${font Noto Sans:size=11}| ${color}CPU: ${cpu}% | RAM: ${color}${color}${color}${mem}${color}/${color}${memmax} | Date: ${color}${color}${time %D} | Time: ${color}${color}${time %I:%M} ${time %P}${color} | ${font}
